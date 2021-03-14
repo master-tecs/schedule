@@ -25,6 +25,11 @@ mongoose
 // midwares
 app.use(express.json());
 app.use(cors());
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("clinet/build"));
+}
+
 app.use("/api/todos", todos);
 app.use("/api/users", users);
 app.use("/api/auth", auth);
