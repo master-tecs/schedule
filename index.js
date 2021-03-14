@@ -18,7 +18,7 @@ if (!config.has("jwtPrivateKey")) {
 }
 
 mongoose
-  .connect(process.env.PORT || "mongodb://localhost/todo")
+  .connect(process.env.DB || "mongodb://localhost/todo")
   .then(() => console.log("Connected to MongoDB..."))
   .catch((err) => console.error("Could not connect to MongoDB..."));
 
