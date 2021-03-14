@@ -1,0 +1,95 @@
+.login {
+  width: 450px;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  max-height: min-content;
+  height: fit-content;
+  margin: auto;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS */
+  .login {
+    width: 340px;
+  }
+}
+.dark-mode .login {
+  background-color: var(--daek-surface);
+  color: var(--white);
+}
+
+.login__head {
+  margin: 10px;
+}
+
+.login__withSM {
+  display: flex;
+  margin: 10px;
+}
+
+.login__withSM--icon {
+  padding: 10px;
+  /* background-color: var(--primary-color) !important; */
+  background-color: var(--dark-primary-color);
+  color: var(--white);
+  border-radius: 50%;
+  margin: 5px;
+  /* border: 1px solid var(--daek-surface); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.login__withSM--icon:hover {
+  background-color: var(--primary-color);
+  color: var(--black) !important;
+}
+
+.login__form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  justify-content: space-evenly;
+  /* background-color: cadetblue; */
+}
+
+.login__withSM--input {
+  margin: 10px auto !important;
+  width: 80% !important;
+}
+
+.MuiOutlinedInput-root {
+}
+
+.MuiButton-contained {
+  background-color: var(--primary-color) !important;
+  border-radius: 20px !important;
+  margin: 15px auto 10px !important;
+  padding: 7px 30px !important;
+}
+
+.login__sign {
+  margin: 10px;
+  margin-bottom: 30px;
+}
+
+.login__sign span {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.login__sign span .link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.dark-mode .login__sign span .link {
+  text-decoration: none;
+  color: var(--dark-primary-color);
+}

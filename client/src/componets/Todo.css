@@ -1,0 +1,129 @@
+.todo {
+  background-color: var(--secondary-color);
+  margin: 10px auto;
+  border-radius: 15px;
+  width: 100%;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  cursor: pointer;
+}
+
+.todoDone {
+  background-color: var(--primary-color);
+  margin: 10px auto;
+  border-radius: 15px;
+  width: 100%;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  cursor: pointer;
+}
+
+.dark-mode .todoDone {
+  background-color: var(--dark-primary-color);
+}
+
+.dark-mode .todo {
+  /* background-color: var(--dark-secondary-color); */
+  /* background-color: var(--dark-surface); */
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+  background-color: var(--dark-secondary-color);
+}
+
+.todo__icon {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: var(--white);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todoDone__icon {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: var(--white);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-mode .todo__icon {
+  background-color: var(--white);
+}
+
+.todo__detail {
+  margin: 10px;
+  display: flex;
+  /* flex-direction: column; */
+  margin-right: 15px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+
+.todo__detail--top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.todo__detail--title > p {
+  font-size: large;
+  font-weight: 600;
+  margin-right: 15px;
+}
+
+.dark-mode .todoDone .todo__detail--title > p {
+  color: var(--black);
+}
+
+.dark-mode .todo__detail--title > p {
+  /* color: var(--white); */
+  color: rgb(236, 234, 234);
+}
+
+.todo__detail--dateTime > p {
+  font-size: small;
+  margin-top: 3px;
+}
+
+.dark-mode .todoDone .todo__detail--dateTime > p {
+  color: var(--black);
+}
+.todo__detail--pin {
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  margin: 10px;
+  width: 80px;
+  padding: 3px 7px;
+  color: var(--white);
+  text-align: center;
+  cursor: pointer;
+}
+
+.dark-mode .todo__detail--pin {
+  color: var(--black);
+}
+
+.todo__detail--discibtion > p {
+  /* margin-top: 7px; */
+  font-size: small;
+}
+
+.dark-mode .todoDone .todo__detail--discibtion > p {
+  color: var(--black);
+}
+.dark-mode .todo__detail--discibtion > p,
+.dark-mode .todo__detail--dateTime > p {
+  color: rgb(218, 216, 216);
+}

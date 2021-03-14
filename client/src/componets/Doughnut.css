@@ -1,0 +1,14 @@
+.douhnut {
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dark-mode .douhnut {
+  margin-top: 30px;
+  border-radius: 15px;
+  background-color: var(--dark-secondary-color);
+}

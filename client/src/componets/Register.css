@@ -1,0 +1,101 @@
+.register {
+  width: 450px;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: fit-content;
+  margin: auto;
+}
+
+.dark-mode .register {
+  background-color: var(--daek-surface);
+  color: var(--white);
+}
+
+.register__head {
+  margin: 10px;
+}
+
+.register__withSM {
+  display: flex;
+  margin: 10px;
+}
+
+.register__withSM--icon {
+  padding: 10px;
+  /* background-color: var(--primary-color) !important; */
+  background-color: var(--dark-primary-color);
+  color: var(--white);
+  border-radius: 50%;
+  margin: 5px;
+  /* border: 1px solid var(--daek-surface); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.register__withSM--icon:hover {
+  background-color: var(--primary-color);
+  color: var(--black) !important;
+}
+
+.register__form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  justify-content: space-evenly;
+  /* background-color: cadetblue; */
+}
+
+.register__form--error {
+  margin: 5px auto !important;
+  color: red;
+}
+
+.register__withSM--input {
+  margin: 10px auto !important;
+  width: 80% !important;
+}
+
+.MuiOutlinedInput-root {
+}
+/* .dark-mode .MuiInputBase-input {
+  color: var(--white) !important;
+  border: 1px solid var(--white) !important;
+  border-radius: 4px !important;
+}
+.dark-mode .MuiInputBase-input:focus {
+  color: var(--white) !important;
+  border: 0 !important;
+  border-radius: 4px !important;
+} */
+.MuiButton-contained {
+  background-color: var(--primary-color) !important;
+  border-radius: 20px !important;
+  margin: 15px auto 10px !important;
+  padding: 7px 30px !important;
+}
+
+.register__sign {
+  margin: 10px;
+  margin-bottom: 30px;
+}
+
+.register__sign span {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.register__sign span .link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.dark-mode .register__sign span .link {
+  text-decoration: none;
+  color: var(--dark-primary-color);
+}

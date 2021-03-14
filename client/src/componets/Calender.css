@@ -1,0 +1,48 @@
+.calender {
+  background-color: var(--white);
+  margin: 10px auto;
+  border-radius: 15px;
+  width: 100%;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+}
+.dark-mode .calender {
+  background-color: var(--daek-surface);
+}
+.mbsc-ios.mbsc-calendar-button.mbsc-button {
+  color: var(--primary-color);
+}
+.dark-mode .mbsc-ios.mbsc-calendar-button.mbsc-button {
+  color: var(--dark-primary-color);
+}
+.mbsc-ios.mbsc-calendar-today {
+  color: var(--primary-color);
+}
+.dark-mode .mbsc-ios.mbsc-calendar-today {
+  color: var(--dark-primary-color);
+}
+.mbsc-ios.mbsc-selected .mbsc-calendar-cell-text {
+  border-color: var(--primary-color);
+  background: var(--primary-color);
+  color: #fff;
+}
+.dark-mode .mbsc-ios.mbsc-selected .mbsc-calendar-cell-text {
+  border-color: var(--dark-primary-color);
+  background: var(--dark-primary-color);
+  color: #fff;
+}
+.mbsc-ios.mbsc-datepicker-inline {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.dark-mode .mbsc-ios-dark.mbsc-datepicker-bottom.mbsc-datepicker-control-date,
+.mbsc-ios-dark.mbsc-datepicker-top.mbsc-datepicker-control-date,
+.mbsc-ios-dark.mbsc-datepicker .mbsc-calendar,
+.mbsc-ios-dark.mbsc-datepicker .mbsc-calendar-cell,
+.mbsc-ios-dark.mbsc-datepicker .mbsc-calendar-slide {
+  background-color: var(--daek-surface);
+}
+.dark-mode .mbsc-ios.mbsc-calendar-controls {
+  background-color: var(--daek-surface);
+}

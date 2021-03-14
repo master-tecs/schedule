@@ -1,0 +1,162 @@
+.todoTitle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.todoDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.todoTitle--title {
+  text-transform: capitalize;
+}
+
+.dark-mode .todoTitle--title {
+  color: var(--dark-primary-color);
+}
+.todoDetail__input {
+  font-size: large;
+  width: 85%;
+  background-color: var(--primary-color);
+  border-radius: 13px;
+  margin: 10px 10px;
+  border: 0;
+  padding: 12px 15px;
+  outline: none;
+}
+.dark-mode .todoDetail__input {
+  width: 85%;
+  color: var(--darkGray);
+  background-color: var(--dark-primary-color);
+}
+
+.todoDetail__date {
+  margin: 10px auto;
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--primary-color);
+
+  border-radius: 13px;
+  border: 0;
+  padding: 12px 15px;
+}
+
+.dark-mode .todoDetail__date {
+  background-color: var(--dark-primary-color);
+  color: var(--darkGray);
+}
+
+.icon {
+  min-width: 40px;
+  width: min-content !important;
+  height: 40px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .icon--delete {
+  width: min-content !important;
+} */
+
+.icon--completed {
+  width: min-content !important;
+  background-color: var(--primary-color);
+  color: var(--black) !important;
+}
+.icon--notCompleted {
+  width: min-content !important;
+  background-color: var(--secondary-color);
+  color: var(--black) !important;
+}
+.dark-mode .icon--completed {
+  background-color: var(--dark-primary-color);
+}
+.dark-mode .icon--notCompleted {
+  background-color: var(--dark-secondary-color);
+  color: var(--gray);
+}
+.icon--notCompleted > p,
+.icon--Completed > p {
+  margin-left: 5px;
+}
+
+.todoDetail__pin {
+  margin: 10px auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.react-datetime-picker__inputGroup__divider {
+  color: var(--black);
+}
+
+.dark-mode .btn--update {
+  background-color: var(--dark-primary-color) !important;
+}
+
+.btn--delete {
+  background-color: red !important;
+  margin-right: 5px !important;
+}
+.dark-mode .btn--delete {
+  background-color: rgb(136, 0, 0) !important;
+}
+.todoDetail__pin--pinned {
+  margin-left: 10px;
+  background-color: none;
+  border-radius: 15px;
+  /* margin: 10px 10px 10px 0; */
+  /* width: 80px; */
+  padding: 5px 15px;
+  color: var(--white);
+  text-align: center;
+  cursor: pointer;
+}
+.pinned__color {
+  background-color: var(--secondary-color);
+}
+.dark-mode .pinned__color {
+  background-color: var(--dark-gray);
+}
+.todoDetail__pin--notpinned {
+  margin-left: 10px;
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+  /* margin: 10px 10px 10px 0; */
+  /* width: 80px; */
+  padding: 5px 15px;
+  color: var(--black);
+  text-align: center;
+  cursor: pointer;
+}
+/* .dark-mode .todoDetail__pin--notpinned {
+  margin-left: 15px;
+  background-color: var(--daek-surface);
+} */
+.dark-mode .todoDetail__pin--notpinned {
+  margin-left: 15px;
+  background-color: var(--dark-secondary-color);
+  color: var(--gray);
+}
+.todoDetail__pin--pinned > p {
+  font-size: medium;
+  color: var(--black);
+}
+
+/* removing border from date-picker */
+.react-datetime-picker__wrapper {
+  border: none !important;
+}

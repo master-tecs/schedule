@@ -1,0 +1,80 @@
+.weekPin {
+  background-color: var(--white);
+  margin: 10px auto;
+  border-radius: 15px;
+  width: 100%;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+  display: flex;
+}
+
+.dark-mode .weekPin {
+  /* background-color: var(--dark-secondary-color); */
+  background-color: var(--daek-surface);
+}
+
+.weekPin__icon {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weekPin__icon .weekPin__icon--add {
+  color: var(--white);
+}
+
+.dark-mode .weekPin__icon {
+  background-color: var(--dark-primary-color);
+}
+
+.weekPin__detail {
+  margin: 10px;
+  display: flex;
+  /* flex-direction: column; */
+  margin-right: 15px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+  cursor: pointer;
+}
+
+.weekPin__detail--title > p {
+  font-size: large;
+  font-weight: 600;
+  margin-right: 15px;
+}
+
+.weekPin__detail--dateTime > p {
+  font-size: small;
+}
+
+.weekPin__detail--pin {
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  margin: 10px 10px 10px 0;
+  width: 80px;
+  padding: 3px 7px;
+  color: var(--white);
+  text-align: center;
+  cursor: pointer;
+}
+
+.dark-mode .weekPin__detail--pin {
+  color: var(--black);
+  background-color: var(--dark-primary-color);
+}
+
+.weekPin__detail--discibtion > p {
+  font-size: small;
+}
+
+.dark-mode .weekPin__detail--discibtion > p,
+.dark-mode .weekPin__detail--dateTime > p {
+  color: rgb(218, 216, 216);
+}

@@ -1,0 +1,86 @@
+.right {
+  width: 300px;
+  height: 100vh;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+.left__moblieSize {
+  display: none;
+}
+.main__detail {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.main__detail::-webkit-scrollbar {
+  display: none;
+}
+.right__profile {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right__profile--name {
+  font-size: larger;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.dark-mode .right__profile--name {
+  color: var(--white);
+}
+.right__profile--seting {
+  font-size: medium;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.dark-mode .right__profile--seting {
+  color: var(--dark-primary-color);
+}
+
+.right__profile--right {
+  margin-top: -8px;
+}
+.right__profile--img {
+  width: 50px;
+  height: 55px;
+  color: #fff;
+  background-color: rgb(250, 227, 96);
+  border-top-left-radius: 90%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 50%;
+  cursor: pointer;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* CSS */
+  /* .left {
+    display: none !important;
+  } */
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS */
+  .right {
+    width: 100%;
+    padding: 0 5px 10px;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    /* display: none !important; */
+  }
+  .left__moblieSize {
+    display: block;
+  }
+}

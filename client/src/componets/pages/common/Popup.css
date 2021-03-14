@@ -1,0 +1,44 @@
+.popup-content {
+  width: 400px !important;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  max-height: min-content;
+  height: fit-content;
+  margin: auto;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS */
+  .popup-content {
+    width: 95% !important;
+  }
+}
+.dark-mode .popup-content {
+  background-color: var(--dark-secondary-color);
+}
+.dark-mode .MuiButton-contained {
+  background-color: var(--dark-primary-color) !important;
+}
+.modal {
+  width: 100%;
+  /* background-color: var(--primary-color); */
+  margin: auto;
+  padding: 10px;
+}
+.modal__close {
+  cursor: pointer;
+}
+
+.modal__header {
+  margin: 10px;
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

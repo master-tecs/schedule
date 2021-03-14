@@ -1,0 +1,91 @@
+.music {
+  margin-top: 40px;
+  border-radius: 15px;
+  background-color: var(--secondary-color);
+  padding-bottom: 10px;
+}
+.dark-mode .music {
+  background-color: var(--dark-secondary-color);
+  color: var(--white);
+}
+.music__top {
+  margin: 10px;
+  display: flex;
+}
+
+.music__top > img {
+  margin: 15px;
+  width: 50px;
+  border-radius: 15px;
+}
+
+.music__name {
+  margin-top: 15px;
+  flex: 1;
+}
+
+.music__title {
+  font-size: large;
+  font-weight: 600;
+}
+.music__artist {
+  font-size: large;
+  font-weight: 400;
+}
+
+.music__icon {
+  margin: 15px;
+  color: rgb(194, 192, 192);
+  cursor: pointer;
+}
+
+.music__slider {
+  margin: -10px 30px 0;
+}
+
+.music__slider .MuiSlider-root {
+  color: var(--primary-color);
+}
+.dark-mode .music__slider .MuiSlider-root {
+  color: var(--dark-primary-color);
+}
+
+.music__slider--timeline {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -10px;
+}
+
+.music__slider--timeline p {
+  font-size: small;
+}
+
+.music__control {
+  display: flex;
+  margin: 10px 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.music__control--play {
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.dark-mode .music__control--play {
+  color: var(--black);
+  background-color: var(--dark-primary-color) !important;
+}
+
+.music__control--icon {
+  cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS */
+  .music {
+    display: none !important;
+  }
+}
